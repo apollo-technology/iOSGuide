@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FIe-62-sHZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wkk-gk-YhN">
+            <objects>
+                <viewController id="FIe-62-sHZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K8V-Sc-mKR"/>
+                        <viewControllerLayoutGuide type="bottom" id="dan-xx-R8q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5r2-8a-7Mz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8L2-ZK-gWa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G23-eA-BlO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="biF-pt-7yC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roundicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="A89-EI-akg">
+                                            <rect key="frame" x="112" y="258" width="150" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="150" id="Nvo-09-BU7"/>
+                                                <constraint firstAttribute="width" constant="150" id="yWY-ap-ohi"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="A89-EI-akg" firstAttribute="centerY" secondItem="biF-pt-7yC" secondAttribute="centerY" id="X8P-41-5u8"/>
+                                        <constraint firstItem="A89-EI-akg" firstAttribute="centerX" secondItem="biF-pt-7yC" secondAttribute="centerX" id="ZwS-Po-9n7"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8L2-ZK-gWa" firstAttribute="leading" secondItem="5r2-8a-7Mz" secondAttribute="leading" id="1J2-me-itD"/>
+                            <constraint firstAttribute="trailing" secondItem="8L2-ZK-gWa" secondAttribute="trailing" id="4JF-L7-3IN"/>
+                            <constraint firstItem="G23-eA-BlO" firstAttribute="leading" secondItem="5r2-8a-7Mz" secondAttribute="leading" id="4x9-Ca-k1k"/>
+                            <constraint firstItem="dan-xx-R8q" firstAttribute="top" secondItem="8L2-ZK-gWa" secondAttribute="bottom" id="Ap2-l2-83h"/>
+                            <constraint firstAttribute="trailing" secondItem="G23-eA-BlO" secondAttribute="trailing" id="AxG-uq-3cW"/>
+                            <constraint firstItem="dan-xx-R8q" firstAttribute="top" secondItem="G23-eA-BlO" secondAttribute="bottom" id="fO9-ou-d0J"/>
+                            <constraint firstItem="G23-eA-BlO" firstAttribute="top" secondItem="5r2-8a-7Mz" secondAttribute="top" id="h7h-lS-aWB"/>
+                            <constraint firstItem="8L2-ZK-gWa" firstAttribute="top" secondItem="5r2-8a-7Mz" secondAttribute="top" id="vMf-do-ITJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMa-5q-4hI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-815.20000000000005" y="223.53823088455775"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.jpg" width="2880" height="1800"/>
+        <image name="roundicon.png" width="2048" height="2048"/>
+    </resources>
+</document>
